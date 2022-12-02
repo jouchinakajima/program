@@ -67,7 +67,7 @@ for(m_k in (-nburn+1):nsim){
   ##--- sampling beta ---##
 
   dvh <- (1 / dv0^2 + dx2 / dsig^2)^(-1/2)
-  dbh <- dvh^2 * (db0^2 / dv0^2 + dxy / dsig^2)
+  dbh <- dvh^2 * (db0 / dv0^2 + dxy / dsig^2)
   
   dbeta <- dbh + dvh * rnorm(1)
   

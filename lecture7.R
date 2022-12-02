@@ -95,7 +95,7 @@ for(m_k in (-nburn+1):nsim){
   dxy <- sum((vy - vmu) * vx)
   
   dvh <- (1 / dv0^2 + dx2 / dsig^2)^(-1/2)
-  dbh <- dvh^2 * (db0^2 / dv0^2 + dxy / dsig^2)
+  dbh <- dvh^2 * (db0 / dv0^2 + dxy / dsig^2)
   
   dbeta <- dbh + dvh * rnorm(1)
   
@@ -114,7 +114,7 @@ for(m_k in (-nburn+1):nsim){
   dxy <- sum(vy[vs==1] - dbeta * vx[vs==1])
 
   dwh <- (1 / dw01^2 + n1 / dsig^2)^(-1/2)
-  dmh <- dwh^2 * (dm01^2 / dw01^2 + dxy / dsig^2)
+  dmh <- dwh^2 * (dm01 / dw01^2 + dxy / dsig^2)
 
   dmu1 <- dmu2
   while (dmu1 >= dmu2) {
@@ -127,7 +127,7 @@ for(m_k in (-nburn+1):nsim){
   dxy <- sum(vy[vs==2] - dbeta * vx[vs==2])
 
   dwh <- (1 / dw02^2 + n2 / dsig^2)^(-1/2)
-  dmh <- dwh^2 * (dm02^2 / dw02^2 + dxy / dsig^2)
+  dmh <- dwh^2 * (dm02 / dw02^2 + dxy / dsig^2)
 
   dmu2 <- dmu1
   while (dmu1 >= dmu2) {
