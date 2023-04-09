@@ -3,7 +3,7 @@
 ##
 ##  y(t) = mu' + phi*y(t-1) + e(t), e(t) ~ N(0, sigma^2)
 ##
-##  Version: 2022/11/04
+##  Version: 2023/04/10
 ##
 
 ##--- initial setup ---##
