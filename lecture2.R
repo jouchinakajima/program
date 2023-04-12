@@ -6,6 +6,8 @@
 ##  sig(t)^2 = omega + beta * sig(t-1)^2 + alpha * e(t-1)^2
 ##  omega > 0, beta >= 0, alpha >= 0
 ##
+##  Version: 2023/04/13
+##
 
 ##--- initial setup ---##
 rm(list=ls())
