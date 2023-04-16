@@ -7,6 +7,8 @@
 ##  omega > 0, beta >= 0, alpha >= 0
 ##  z(t) ~ N(0, 1)
 ##
+##  Version: 2023/04/17
+##
 
 ##--- initial setup ---##
 rm(list=ls())
@@ -124,11 +126,14 @@ dev.new()
 par(mfrow = c(2, 2))
 plot(vp, type='l',
      col='2', main='Price (p)',
-     xlab='t', ylab='P(t)')
+     xlab='t', ylab='P(t)',
+     cex.main = 1)
 plot(vy, type='l',
      col='2', main='Return (y)',
-     xlab='t', ylab='y(t)')
+     xlab='t', ylab='y(t)',
+     cex.main = 1)
 plot(sqrt(vsig2), type='l',
      col='2', main='Estimated volatility (sigma)',
-     xlab='t', ylab='sigma(t)')
+     xlab='t', ylab='sigma(t)',
+     cex.main = 1)
 
