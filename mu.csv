@@ -1,13 +1,5 @@
-Macroeconomic Uncertainty Index for Japan,
-1. Cite the following articles when using this dataset.,
-" - Shinohara, T., T. Okuda, and J. Nakajima (2020) ""Characteristics of uncertainty indices in the macroeconomy,"" Bank of Japan Working Paper Series, No.20-E-6",
-" - Nakajima, J. (2022) ""Macroeconomic uncertainty matters: A nonlinear effect of financial volatility on real economic activity,"" Discussion Paper Series HIAS-E-121, Hitotsubashi Institute for Advanced Study, Hitotsubashi University.",
-2. The dataset is estimated and released by J. Nakajima within his research activity.,
-3. The appendix of Nakajima (2022) describes the computation method for the dataset.,
-"4. While some of the authors in the above article are staff of the Bank of Japan, the dataset is not the official view of the Bank of Japan.",
-5. The dataset is updated every few months. The past figures are also re-estimated and subject to updates.,
-"This version: May 31, 2023",
-yyyymm,index
+Data as of 2023-05-31,
+month,index
 197906,0.76996
 197907,0.77325
 197908,0.78622
