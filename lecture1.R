@@ -3,7 +3,7 @@
 ##
 ##  y(t) = mu' + phi*y(t-1) + e(t), e(t) ~ N(0, sigma^2)
 ##
-##  Version: 2023/04/10
+##  Version: 2024/04/10
 ##
 
 ##--- initial setup ---##
@@ -48,11 +48,6 @@ dev.new()
 plot(vy, type='l', 
      col='2', main='Simulated series',
      xlab='t', ylab='y(t)')
-
-dev.new()
-plot(vy[1:(ns-1)], vy[2:ns],
-     col='2', pch=20, main='Simulated series',
-     xlab='y(t-1)', ylab='y(t)')
 
 
 ##--- some statistics ---##
