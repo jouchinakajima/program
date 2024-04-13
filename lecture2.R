@@ -6,28 +6,26 @@
 ##  sig(t)^2 = omega + beta * sig(t-1)^2 + alpha * e(t-1)^2
 ##  omega > 0, beta >= 0, alpha >= 0
 ##
-##  Version: 2023/04/13
-##
 
 ##--- initial setup ---##
 rm(list=ls())
 gc()
 gc()
-set.seed(2)
+set.seed(1)
 
 ##--- set true value ---##
 
 da <- 0         # a
 db <- 0         # b
 
-domeg <- 0.2    # omega
-dbeta <- 0.8    # beta
+domeg <- 0.5    # omega
+dbeta <- 0.85   # beta
 dalph <- 0.1    # alpha
 
 
 ##--- set variables ---##
 
-ns <- 100      # the number of observations
+ns <- 1500      # the number of observations
 
 vy <- vsig <- ve <- matrix(0, ns, 1)
 
@@ -62,3 +60,11 @@ plot(vy, type='l',
      xlab='t', ylab='y(t)')
 
 
+##--- output to csv file ---##
+
+vp <- matrix(0, ns, 1)
+vp[1] <- 10523 + rnorm(1)
+for (t in 1:(ns-1)) {
+  vp[t+1] <- vp[t] * (1 + vy[t+1] / 100)
+}
+write.csv(vp, "psim.csv", row.names=FALSE)
