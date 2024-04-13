@@ -59,12 +59,3 @@ plot(vy, type='l',
      col='2', main='Simulated return (y)',
      xlab='t', ylab='y(t)')
 
-
-##--- output to csv file ---##
-
-vp <- matrix(0, ns, 1)
-vp[1] <- 10523 + rnorm(1)
-for (t in 1:(ns-1)) {
-  vp[t+1] <- vp[t] * (1 + vy[t+1] / 100)
-}
-write.csv(vp, "psim.csv", row.names=FALSE)
