@@ -7,8 +7,6 @@
 ##  omega > 0, beta >= 0, alpha >= 0
 ##  z(t) ~ N(0, 1)
 ##
-##  Version: 2023/04/17
-##
 
 ##--- initial setup ---##
 rm(list=ls())
