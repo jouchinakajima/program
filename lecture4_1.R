@@ -1,7 +1,7 @@
 ##
 ##  Stochastic volatility model
 ##
-##  epsilon(t) = exp(h(t)/2)*z(t), z(t) ~ N(0, 1)
+##  epsilon(t) = exp(x(t)/2)*z(t), z(t) ~ N(0, 1)
 ##  x(t) = log(sigma(t)^2)
 ##  x(t+1) = omega + phi*x(t) + eta(t)
 ##  eta(t) ~ N(0, sigma_eta^2)
